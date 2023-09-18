@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="js/site.js"></script>
+    
+
+    <!--
+    <style>
+        body {
+            background-image: url('images/tanjore.jpeg') ;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          
+        }
+    </style>
+    -->
+</head>
+<body>
+<div class="container">
+<nav class="navbar">
+    <div class="container">
+        <ul class="navbar-list">
+
+            <li class="navbar-item">
+                <a href="pages/home.html" class="navbar-link">Home</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/ourguru.html" class="navbar-link">Our Guru</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/gurudarshan.html" class="navbar-link">Guru Darshan</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="#" class="navbar-link" data-popover="#moreNavPopover">Resources</a>
+                <div id="moreNavPopover" class="popover">
+                    <ul class="popover-list">
+                        <li class="popover-item">
+                            <a href="pages/resources_devotion.html" class="popover-link">Devotion</a>
+                        </li>
+                        <li class="popover-item">
+                            <a href="pages/resources_vedic_astrology.html" class="popover-link">Vedic Astrology</a>
+                        </li>
+                        <li class="popover-item">
+                            <a href="pages/resources_srividya_meditation.html" class="popover-link">Sri Vidiya Meditation</a>
+                        </li>
+                        <li class="popover-item">
+                            <a href="pages/resources_universal_human_values.html" class="popover-link">Universal Human Values</a>
+                        </li>
+                        <li class="popover-item">
+                            <a href="pages/resources_vedanta.html" class="popover-link">Vedanta</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/programs.html" class="navbar-link">Programs</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/gallery_media.html" class="navbar-link">Gallery</a>
+            </li>
+
+            <li class="navbar-item">
+                <a href="pages/contact.html" class="navbar-link">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="docs-section" id="home"></div>
+ 
+
+</div>
+</body>
+</html>
+
+<script>
+    $(function(){        
+        $("#home").load("./pages/home.html");
+ 
+        $("a").click(function(evt){
+             evt.preventDefault()            
+             $("#home").load(evt.target.href)
+        })
+    })
+ </script>
